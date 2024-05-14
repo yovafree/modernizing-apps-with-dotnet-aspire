@@ -40,11 +40,6 @@ var apiService = builder.AddProject<Projects.demo2_ApiService>("apiservice")
     .WithReference(postgresdb);
 ```
 
-### Ejecutar el proyecto de .NET Aspire
-```
-dotnet run --project demo2/demo2.AppHost
-```
-
 ## Instalación de RabbitMQ
 
 ### Agregar al proyecto demo2.ApiService la librería:
@@ -78,4 +73,9 @@ var apiService = builder.AddProject<Projects.demo2_ApiService>("apiservice")
 var apiService = builder.AddProject<Projects.demo2_ApiService>("apiservice")
     .WithReference(postgresdb)
     .WithReference(messaging);
+```
+
+### Ejecutar el proyecto de .NET Aspire
+```
+dotnet run --project demo2/demo2.AppHost
 ```
